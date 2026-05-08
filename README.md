@@ -192,7 +192,7 @@ Push/PR para main
 |---|---|
 | [📋 Plano de Testes](#) | Objetivo, escopo, estratégia, cenários BDD, matriz de risco |
 
-> 💡 **Substitua o `#` pelo link do seu Google Docs ou PDF com o Plano de Testes.**
+> (https://docs.google.com/document/d/1aaBBvw89NX3PLmeHQXiQPLR3E_Bguzscg8T9uj2ArMQ/edit?usp=sharing)
 
 ---
 
