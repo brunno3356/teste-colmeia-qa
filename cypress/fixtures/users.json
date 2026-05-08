@@ -1,0 +1,26 @@
+{
+  "validUser": {
+    "email": "qa@test.com",
+    "password": "123456"
+  },
+  "invalidUser": {
+    "email": "qa@test.com",
+    "password": "senhaErrada"
+  },
+  "emptyUser": {
+    "email": "",
+    "password": ""
+  },
+  "sqlInjectionUser": {
+    "email": "' OR '1'='1",
+    "password": "' OR '1'='1"
+  },
+  "xssUser": {
+    "email": "<script>alert('xss')</script>",
+    "password": "qualquercoisa"
+  },
+  "longStringUser": {
+    "email": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@test.com",
+    "password": "123456"
+  }
+}

@@ -1,4 +1,14 @@
 {
+  "name": "teste-colmeia-qa",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes E2E para o desafio técnico Colmeia QA",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:headed": "cypress run --headed --browser chrome"
+  },
+  "author": "Brunno Araújo",
   "devDependencies": {
     "cypress": "^15.14.2"
   }
