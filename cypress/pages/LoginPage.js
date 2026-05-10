@@ -7,8 +7,8 @@
 class LoginPage {
 
   // ─── Seletores ────────────────────────────────────────────────────────────
-  get emailInput()    { return cy.get('input[name="email"]') }
-  get passwordInput() { return cy.get('input[name="password"]') }
+  get emailInput()    { return cy.get('input#email') }
+  get passwordInput() { return cy.get('input#password') }
   get btnEntrar()     { return cy.get('button[type="submit"]') }
   get btnContinuar()  { return cy.get('button').contains('Continuar') }
 
