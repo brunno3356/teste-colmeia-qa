@@ -17,7 +17,6 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chrome]
-        containers: [1, 2]
 
     steps:
       - name: Checkout
@@ -35,9 +34,5 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: ${{ matrix.browser }}
-          record: true
-          parallel: true
-          group: "UI-Tests-${{ matrix.browser }}"
         env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
