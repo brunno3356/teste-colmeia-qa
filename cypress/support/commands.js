@@ -12,9 +12,9 @@ Cypress.Commands.add('login', (email, password) => {
     [email, password],
     () => {
       cy.visit('/')
-      cy.get('[type="email"]').type(email)
-      cy.get('[type="password"]').type(password, { log: false })
-      cy.get('[type="submit"]').click()
+      cy.get('input[name="email"]').type(email)
+      cy.get('input[name="password"]').type(password, { log: false })
+      cy.get('button[type="submit"]').click()
       // O login é um form submit tradicional — valida saída da página de login
       cy.url().should('not.include', '/login')
     },
@@ -33,7 +33,7 @@ Cypress.Commands.add('login', (email, password) => {
  * @param {string} password
  */
 Cypress.Commands.add('loginViaUI', (email, password) => {
-  cy.get('[type="email"]').type(email)
-  cy.get('[type="password"]').type(password, { log: false })
-  cy.get('[type="submit"]').click()
+  cy.get('input[name="email"]').type(email)
+  cy.get('input[name="password"]').type(password, { log: false })
+  cy.get('button[type="submit"]').click()
 })
